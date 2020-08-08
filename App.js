@@ -55,7 +55,7 @@ const App = () => {
 
         </View>
         <FlatList
-          style={{ flex:1, backgroundColor:'red'}}
+          style={{ flex:1}}
           data={toDoData}
           renderItem={renderItem}
           keyExtractor={item => item.id}
