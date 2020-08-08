@@ -25,8 +25,8 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={{flex: 0.7}}>
-        <View style={{flex: 1, alignItems: 'center', paddingTop:20}}>
+      <SafeAreaView style={{flex: 1}}>
+        <View style={{flex: 0.5, alignItems: 'center', paddingTop:20}}>
           <Input
            placeholder={'Title'}
            value={toDoTitle}
@@ -55,7 +55,7 @@ const App = () => {
 
         </View>
         <FlatList
-          style={{ flex:1}}
+          style={{ flex:1, backgroundColor:'red'}}
           data={toDoData}
           renderItem={renderItem}
           keyExtractor={item => item.id}
